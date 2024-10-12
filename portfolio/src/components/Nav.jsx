@@ -2,7 +2,7 @@ import { links } from '../data';
 
 const Nav = () => {
   return (
-    <nav className='mx-auto flex sticky justify-between items-center gap-16 px-9
+    <nav className='z-10 mx-auto flex sticky justify-between items-center gap-16 px-9
                    text-gray-950  h-14 top-0 backdrop-blur-md border-b'>
       <h2 className=' text-base'>
         Kermit Liu
