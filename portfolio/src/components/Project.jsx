@@ -60,7 +60,7 @@ const Project = ({img, url, github, title, build, description}) => {
                       src={img} 
                       alt="" />
       </div>
-      <div className="flex flex-col justify-center px-6 lg:w-1/2">
+      <div className="flex flex-col justify-center px-6 lg:w-2/3 lg:max-w-md">
         <h3 className="font-bold py-3">{title}</h3>
         <div className="text-[13px] py-3">{description}</div>
         <div className="text-emerald-600 text-[12px] pb-2">{build}</div>

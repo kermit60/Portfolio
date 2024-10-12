@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className='z-10 mx-auto flex sticky justify-between items-center 
                     px-2 sm:px-7 md:px-20 xl:px-56 h-14 top-0 gap-16 
                     backdrop-blur-md border-b text-gray-950'>
-      <h2 className=' text-base'>
+      <h2 className=' text-base bg-gradient-to-r from-black via-slate-600 to-black bg-clip-text font-bold text-transparent'>
         Kermit Liu
       </h2>
       
