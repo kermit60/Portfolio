@@ -51,15 +51,22 @@ const Project = ({img, url, github, title, build, description}) => {
         transformStyle: "preserve-3d",
         transform
       }}
-      className="flex h-[15rem] rounded-md shadow-[1px_4px_7px_0px_rgb(0,0,0,0.2)]">
-      <img className="w-1/2 h-[250px] rounded-l-lg p-5 object-cover" src={img} alt="" />
+      className="flex flex-col py-4 rounded-md shadow-[1px_4px_7px_0px_rgb(0,0,0,0.2)]
+                 lg:h-[20rem] lg:flex-row ">
+      <div className="flex justify-center lg:items-center">
+        <img className="w-full p-3 rounded-l-lg object-cover
+                      md:max-w-[30rem]  lg:max-w-[35rem] lg:p-0 lg:h-fit lg:max-h-full lg:pl-5" 
+                      src={img} 
+                      alt="" />
+      </div>
+      
       <div className="flex flex-col justify-center px-6">
         <h3 className="font-bold py-3">{title}</h3>
         <div className="text-[13px] py-3">{description}</div>
         <div className="text-emerald-600 text-[12px] pb-2">{build}</div>
         <div className="flex justify-between text-[13px] text-emerald-600 ">
-          <a className="flex hover:scale-105 transition duration-100 ease-in-out" href={github}>View source code <GoArrowUpRight/></a>
-          <a className="flex hover:scale-105 transition duration-100 ease-in-out" href={url}>View website<GoArrowUpRight/></a>
+          <a className="flex hover:scale-105 transition duration-100 ease-in-out" href={github} target="_blank">View source code <GoArrowUpRight/></a>
+          <a className="flex hover:scale-105 transition duration-100 ease-in-out" href={url} target="_blank">View website<GoArrowUpRight/></a>
         </div>
       </div>
     </motion.div>

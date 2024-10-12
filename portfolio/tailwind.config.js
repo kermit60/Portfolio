@@ -10,6 +10,12 @@ export default {
       }
 
     },
+    screens: {
+      'sm': '450px',
+      'md': '550px',
+      'lg': '800px',
+      'xl': '1150px',
+    }
   },
   plugins: [],
 };

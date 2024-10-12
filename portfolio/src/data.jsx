@@ -37,8 +37,8 @@ export const projects = [
     img: project1,
     url: 'https://kermit60.github.io/todo-list/',
     github: 'https://github.com/kermit60/todo-list/',
-    title: 'ToDo List',
-    build: 'Built with Javascript, HTML&CSS',
+    title: 'ToDoList',
+    build: 'Built with Javascript, HTML and CSS',
     description: 'A simple task management tool that allows users to create/delete projects, tasks and allows for easy filtering.'
   },
   {
@@ -46,18 +46,18 @@ export const projects = [
     img: project2,
     url: 'https://kermit60.github.io/weather-app/',
     github: 'https://github.com/kermit60/weather-app',
-    title: 'Weather application',
-    build: 'Built with Javascript, HTML&CSS',
+    title: 'Weather App',
+    build: 'Built with Javascript, HTML and CSS',
     description: "A Weather forecast application that's a simple website that displays your location's weather built with Javascript, HTML, and CSS."
   },
   {
     id: nanoid(),
     img: project3,
-    url: 'https://github.com/kermit60/Portfolio',
-    github: 'https://github.com/kermit60/Portfolio',
-    title: 'some project',
-    build: 'Build with Javascript CSS',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quas molestias quia dolore corrupti amet, delectus alias explicabo exercitationem quisquam quibusdam optio dolorem perspiciatis inventore!'
+    url: 'https://kermit60.github.io/tic-tac-toe/',
+    github: 'https://github.com/kermit60/tic-tac-toe',
+    title: 'TicTacToe game',
+    build: 'Built with Javascript, HTML and CSS',
+    description: 'Play the classic game of Tic Tac Toe with two players!'
   },
 ]
 
