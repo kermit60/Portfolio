@@ -52,15 +52,15 @@ const Project = ({img, url, github, title, build, description}) => {
         transform
       }}
       className="flex flex-col py-4 rounded-md shadow-[1px_4px_7px_0px_rgb(0,0,0,0.2)]
-                 lg:h-[20rem] lg:flex-row ">
-      <div className="flex justify-center lg:items-center">
-        <img className="w-full p-3 rounded-l-lg object-cover
-                      md:max-w-[30rem]  lg:max-w-[35rem] lg:p-0 lg:h-fit lg:max-h-full lg:pl-5" 
+                md:py-5 lg:h-[22rem] lg:flex-row lg:justify-center lg:gap-5">
+                
+      <div className="flex justify-center lg:items-center ">
+        <img className="w-full md:max-w-[30rem]
+                       lg:p-0 lg:max-h-full lg:pl-5" 
                       src={img} 
                       alt="" />
       </div>
-      
-      <div className="flex flex-col justify-center px-6">
+      <div className="flex flex-col justify-center px-6 lg:w-1/2">
         <h3 className="font-bold py-3">{title}</h3>
         <div className="text-[13px] py-3">{description}</div>
         <div className="text-emerald-600 text-[12px] pb-2">{build}</div>
