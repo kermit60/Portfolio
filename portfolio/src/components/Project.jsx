@@ -52,7 +52,8 @@ const Project = ({img, url, github, title, build, description}) => {
         transform
       }}
       className="flex flex-col py-4 rounded-md shadow-[1px_4px_7px_0px_rgb(0,0,0,0.2)]
-                md:py-5 lg:h-[22rem] lg:flex-row lg:justify-center lg:gap-5">
+                md:py-5 lg:h-[22rem] lg:flex-row lg:justify-center lg:gap-5 text-xl
+                xl:h-[30rem]">
                 
       <div className="flex justify-center lg:items-center ">
         <img className="w-full md:max-w-[30rem]
@@ -62,9 +63,9 @@ const Project = ({img, url, github, title, build, description}) => {
       </div>
       <div className="flex flex-col justify-center px-6 lg:w-2/3 lg:max-w-md">
         <h3 className="font-bold py-3">{title}</h3>
-        <div className="text-[13px] py-3">{description}</div>
-        <div className="text-emerald-600 text-[12px] pb-2">{build}</div>
-        <div className="flex justify-between text-[13px] text-emerald-600 ">
+        <div className="text-[16px] py-3">{description}</div>
+        <div className="text-emerald-600 text-[14px] pb-2">{build}</div>
+        <div className="flex justify-between text-[15px] text-emerald-600 ">
           <a className="flex hover:scale-105 transition duration-100 ease-in-out" href={github} target="_blank">View source code <GoArrowUpRight/></a>
           <a className="flex hover:scale-105 transition duration-100 ease-in-out" href={url} target="_blank">View website<GoArrowUpRight/></a>
         </div>
