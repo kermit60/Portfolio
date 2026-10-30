@@ -1,5 +1,6 @@
 import { FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import bingeboxMock from "./assets/bingebox-mock.png";
+import cvMock from "./assets/cv.png";
 export const links = [
   { id: "about", href: "#about", text: "about" },
   { id: "experience", href: "#experience", text: "experience" },
@@ -34,6 +35,7 @@ export const projects = [
   {
     id: "bingebox",
     img: bingeboxMock,
+    url: "https://bingebox-project.netlify.app/",
     title: "BingeBox",
     build: "React · FastAPI · TMDB API · Google Gemini",
     bullets: [
@@ -44,6 +46,8 @@ export const projects = [
   },
   {
     id: "easyquickcv",
+    img: cvMock,
+    url: "https://easyquickcv.netlify.app/",
     title: "EasyQuickCV",
     build: "React · HTML/CSS · JavaScript",
     bullets: [

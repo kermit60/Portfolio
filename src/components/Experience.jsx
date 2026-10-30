@@ -5,12 +5,11 @@ const experience = [
   {
     period: "Sept 2025 — Dec 2025",
     role: "Applications Developer",
-    organization:
-      "Ministry of Public and Business Service Delivery and Procurement",
+    organization: "Ministry of Public and Business Service Delivery and Procurement",
     bullets: [
-      "Architected a scheduled reporting solution using Informatica REST APIs, Python automation, and AWS Glue to capture ETL run status, successful counts, durations, and actionable failure diagnostics.",
-      "Designed and developed 19 Informatica mappings and an end-to-end task flow to replicate 145 enterprise Oracle objects into Amazon Redshift for downstream analytics and reporting.",
-      "Collaborated with six co-op developers in a ministry-wide internal data hackathon to design and build a PySpark-based data integration solution in Microsoft Fabric.",
+      "Contributed to data platform initiatives focused on improving the visibility, reliability, and maintainability of automated workflows.",
+      "Designed integrations that supported the movement of structured data between enterprise systems and cloud-based analytics environments.",
+      "Worked with a cross-functional development team to explore practical approaches to data integration and reporting.",
     ],
   },
   {
@@ -18,9 +17,9 @@ const experience = [
     role: "Applications Developer",
     organization: "Ontario Ministry of Health",
     bullets: [
-      "Accelerated cloud migration by 15% using SQL and Informatica Regex transformations to transition 70+ ETL workflows from an on-premise data warehouse to Informatica Cloud.",
-      "Automated the transfer and validation of 50+ daily healthcare claim logs to AWS S3 with Bash scripts, improving data reliability and reducing manual effort.",
-      "Managed and optimized Informatica Cloud ETL pipelines to transition structured data to AWS S3 for data visualization and reporting.",
+      "Supported the modernization of data workflows as part of a broader transition from on-premise systems to cloud services.",
+      "Automated recurring data handling and validation tasks to improve consistency and reduce manual overhead.",
+      "Maintained and refined ETL processes that prepared structured data for visualization, reporting, and downstream use.",
     ],
   },
   {
@@ -29,9 +28,9 @@ const experience = [
     organization:
       "Microsoft — Azure & Artificial Intelligence Waterloo Experience Accelerate Program · Waterloo, ON",
     bullets: [
-      "Prototyped an AI-driven healthcare privacy solution using Microsoft cloud and AI services to balance data accessibility and individual privacy protection.",
-      "Analyzed potential data privacy AI techniques, including homomorphic encryption and differential privacy algorithms, for healthcare data collection and processing.",
-      "Collaborated with three group members and presented the solution to industry collaborators and supervisors.",
+      "Explored an AI-assisted approach to balancing access to sensitive information with the need for responsible privacy protections.",
+      "Researched emerging privacy-preserving techniques and considered their practical use in healthcare-related data workflows.",
+      "Collaborated on a prototype and communicated the team’s findings to technical and industry audiences.",
     ],
   },
 ];
@@ -40,10 +39,8 @@ const Experience = () => {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-12 lg:px-8 lg:py-20">
       <div className="mb-10">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-emerald-600 dark:text-emerald-400">
-          Background
-        </p>
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Experience</h2>
+        <p className="section-eyebrow">Background</p>
+        <h2 className="section-heading">Experience</h2>
       </div>
 
       <div className="border-y border-slate-200 dark:border-slate-800">
@@ -72,7 +69,7 @@ const Experience = () => {
         href="https://www.linkedin.com/in/kermitliu02l98/"
         target="_blank"
         rel="noreferrer"
-        className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 transition hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300"
+        className="button-secondary mt-8"
       >
         <FaLinkedin size={18} />
         View my LinkedIn

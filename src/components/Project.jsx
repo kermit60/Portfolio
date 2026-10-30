@@ -62,32 +62,22 @@ const Project = ({ img, url, github, title, build, bullets }) => {
       <div
         className={`flex flex-col justify-center px-6 py-8 lg:px-10 ${img ? "lg:w-1/2" : "w-full"}`}
       >
-        <h3 className="py-2 text-2xl font-bold tracking-tight">{title}</h3>
+        <h3 className="py-2 text-2xl font-semibold tracking-tight">{title}</h3>
         <ul className="list-disc space-y-2 py-3 pl-5 text-base leading-7 text-slate-600 dark:text-slate-300">
           {bullets.map((bullet) => (
             <li key={bullet}>{bullet}</li>
           ))}
         </ul>
-        <p className="pb-5 text-sm font-medium text-emerald-600 dark:text-emerald-400">{build}</p>
+        <p className="pb-5 text-sm font-medium text-slate-500 dark:text-slate-400">{build}</p>
         {github || url ? (
-          <div className="flex flex-wrap gap-5 text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+          <div className="flex flex-wrap gap-3">
             {github ? (
-              <a
-                className="flex items-center gap-1 transition hover:text-emerald-800 dark:hover:text-emerald-300"
-                href={github}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="button-secondary" href={github} target="_blank" rel="noreferrer">
                 View source code <GoArrowUpRight />
               </a>
             ) : null}
             {url ? (
-              <a
-                className="flex items-center gap-1 transition hover:text-emerald-800 dark:hover:text-emerald-300"
-                href={url}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="button-secondary" href={url} target="_blank" rel="noreferrer">
                 View website
                 <GoArrowUpRight />
               </a>

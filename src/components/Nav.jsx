@@ -31,7 +31,7 @@ const Nav = ({ isDark, onToggleTheme }) => {
             type="button"
             onClick={onToggleTheme}
             aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
-            className="rounded-full border border-slate-200 p-2 text-slate-600 transition hover:border-emerald-400 hover:text-emerald-500 dark:border-slate-700 dark:text-slate-300"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/70 text-slate-600 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-emerald-400 hover:text-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-300 dark:focus:ring-offset-slate-950"
           >
             {isDark ? <MdLightMode size={19} /> : <MdDarkMode size={19} />}
           </button>
